@@ -1,0 +1,6 @@
+allow mediaserver camera_prop:property_service set;
+
+# from sumsung d2att
+allow mediaserver camera_socket:sock_file write;
+allow mediaserver camera_device:dir search;
+allow mediaserver system_file:file execmod;

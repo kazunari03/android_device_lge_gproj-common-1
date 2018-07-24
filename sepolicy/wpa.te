@@ -1,0 +1,6 @@
+
+allow wpa block_device:dir search;
+allow wpa misc_partition:blk_file { getattr rw_file_perms };
+
+allow wpa devpts:chr_file rw_file_perms;
+allow wpa init:unix_dgram_socket { read write };
